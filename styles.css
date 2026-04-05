@@ -2,6 +2,134 @@
    Ponipalvelu — Styles
    ========================================================================== */
 
+/* --- Self-hosted fonts --- */
+
+@font-face {
+  font-family: 'Cormorant Upright';
+  src: url('assets/fonts/cormorant-upright-400-latin.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Cormorant Upright';
+  src: url('assets/fonts/cormorant-upright-400-latin-ext.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Cormorant Upright';
+  src: url('assets/fonts/cormorant-upright-500-latin.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Cormorant Upright';
+  src: url('assets/fonts/cormorant-upright-500-latin-ext.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Cormorant Upright';
+  src: url('assets/fonts/cormorant-upright-600-latin.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Cormorant Upright';
+  src: url('assets/fonts/cormorant-upright-600-latin-ext.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Cormorant Upright';
+  src: url('assets/fonts/cormorant-upright-700-latin.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Cormorant Upright';
+  src: url('assets/fonts/cormorant-upright-700-latin-ext.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('assets/fonts/source-serif-4-latin.woff2') format('woff2');
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url('assets/fonts/source-serif-4-latin-ext.woff2') format('woff2');
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/inter-latin-ext.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('assets/fonts/geist-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('assets/fonts/geist-latin-ext.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 :root {
   --color-primary: #4A6741;
   --color-primary-light: #5C7E52;
@@ -20,8 +148,8 @@
   --color-dark-bg-light: #2A3A24;
 
   --font-heading: 'Cormorant Upright', 'Georgia', serif;
-  --font-body: 'PT Serif', 'Georgia', serif;
-  --font-accent: 'Courgette', cursive;
+  --font-body: 'Source Serif 4', 'Georgia', serif;
+  --font-accent: 'Geist', 'Inter', sans-serif;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -66,6 +194,7 @@ html {
 body {
   font-family: var(--font-body);
   font-size: 1.0625rem;
+  font-weight: 400;
   line-height: 1.7;
   color: var(--color-dark);
   background-color: var(--color-cream);
@@ -151,9 +280,11 @@ strong {
 .section-label {
   display: inline-block;
   font-family: var(--font-accent);
-  font-size: 1rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-transform: uppercase;
   color: var(--color-accent);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.1em;
   margin-bottom: var(--spacing-xs);
 }
 
@@ -221,14 +352,16 @@ strong {
   color: var(--color-primary);
 }
 
-.logo-icon {
-  color: var(--color-primary);
-  display: flex;
+.logo-img {
+  width: 125px;
+  height: 72px;
+  object-fit: contain;
 }
 
 .logo-text {
-  font-family: var(--font-accent);
+  font-family: var(--font-heading);
   font-size: 1.5rem;
+  font-weight: 600;
   letter-spacing: -0.01em;
 }
 
@@ -334,26 +467,28 @@ strong {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  background:
-    radial-gradient(ellipse at 30% 20%, rgba(74, 103, 65, 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 80%, rgba(139, 105, 20, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(193, 119, 103, 0.08) 0%, transparent 60%),
-    linear-gradient(180deg, #2A3A24 0%, #1E2A1A 40%, #1A2416 100%);
+  background: var(--color-cream);
 }
 
-.hero::before {
-  content: '';
+.hero-bg-img {
   position: absolute;
   inset: 0;
-  background:
-    repeating-conic-gradient(rgba(255,255,255,0.01) 0% 25%, transparent 0% 50%) 0 0 / 60px 60px;
-  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  opacity: 0.45;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, transparent 0%, rgba(26, 36, 22, 0.4) 100%);
+  background:
+    linear-gradient(180deg,
+      rgba(253, 248, 240, 0.7) 0%,
+      rgba(253, 248, 240, 0.3) 35%,
+      rgba(253, 248, 240, 0.2) 55%,
+      rgba(253, 248, 240, 0.75) 100%);
 }
 
 .hero-content {
@@ -363,28 +498,31 @@ strong {
   max-width: 700px;
 }
 
-.hero-subtitle {
-  font-family: var(--font-accent);
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: var(--color-accent-light);
+.hero-title {
   margin-bottom: var(--spacing-sm);
-  letter-spacing: 0.04em;
 }
 
-.hero-title {
-  font-family: var(--font-heading);
-  font-size: clamp(3.5rem, 10vw, 6rem);
-  font-weight: 700;
-  color: var(--color-cream);
-  line-height: 1;
+.hero-logo-img {
+  width: clamp(220px, 40vw, 440px);
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.1));
+}
+
+.hero-subtitle {
+  font-family: var(--font-accent);
+  font-size: clamp(0.8rem, 2vw, 0.9375rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-accent);
   margin-bottom: var(--spacing-md);
-  letter-spacing: -0.02em;
+  letter-spacing: 0.12em;
 }
 
 .hero-tagline {
   font-family: var(--font-body);
   font-size: clamp(1rem, 2vw, 1.25rem);
-  color: rgba(253, 248, 240, 0.75);
+  color: var(--color-dark-soft);
   line-height: 1.6;
   margin-bottom: var(--spacing-lg);
 }
@@ -398,7 +536,8 @@ strong {
 
 .hero-scroll-hint {
   margin-top: var(--spacing-xl);
-  color: rgba(253, 248, 240, 0.35);
+  color: var(--color-dark-muted);
+  opacity: 0.5;
   animation: bounce 2.5s infinite;
 }
 
@@ -442,14 +581,14 @@ strong {
 
 .btn-outline {
   background: transparent;
-  color: var(--color-cream);
-  border-color: rgba(253, 248, 240, 0.35);
+  color: var(--color-dark);
+  border-color: rgba(44, 24, 16, 0.25);
 }
 
 .btn-outline:hover {
-  background: rgba(253, 248, 240, 0.1);
-  border-color: rgba(253, 248, 240, 0.6);
-  color: var(--color-cream);
+  background: rgba(44, 24, 16, 0.06);
+  border-color: rgba(44, 24, 16, 0.4);
+  color: var(--color-dark);
   transform: translateY(-2px);
 }
 
@@ -473,8 +612,10 @@ strong {
 }
 
 .about-signature {
-  font-family: var(--font-accent);
+  font-family: var(--font-heading);
   font-size: 1.25rem;
+  font-weight: 500;
+  font-style: italic;
   color: var(--color-accent);
   margin-top: var(--spacing-md) !important;
 }
@@ -577,7 +718,22 @@ strong {
 .services-cta p {
   font-size: 1.125rem;
   color: var(--color-dark-muted);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.hopoti-link {
+  display: inline-block;
+  transition: transform var(--transition-base), opacity var(--transition-base);
+}
+
+.hopoti-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
+
+.hopoti-logo {
+  height: 48px;
+  width: auto;
 }
 
 /* ==========================================================================
@@ -790,9 +946,18 @@ strong {
   gap: var(--spacing-md);
 }
 
+.footer-logo-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin: 0 auto var(--spacing-xs);
+  border-radius: 50%;
+}
+
 .footer-logo {
-  font-family: var(--font-accent);
+  font-family: var(--font-heading);
   font-size: 1.5rem;
+  font-weight: 600;
   color: var(--color-cream);
 }
 
@@ -914,10 +1079,6 @@ strong {
     width: auto !important;
   }
 
-  .hero-title {
-    font-size: clamp(3rem, 12vw, 4.5rem);
-  }
-
   .contact-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
@@ -991,8 +1152,198 @@ button:focus-visible {
   border-radius: 4px;
 }
 
+/* Theme-aware logos */
+.logo-dark {
+  display: none;
+}
+
+[data-theme="dark"] .logo-light {
+  display: none;
+}
+
+[data-theme="dark"] .logo-dark {
+  display: block;
+}
+
+.site-footer .logo-light {
+  display: none;
+}
+
+.site-footer .logo-dark {
+  display: block;
+}
+
 /* Selection styling */
 ::selection {
   background: rgba(74, 103, 65, 0.2);
   color: var(--color-dark);
+}
+
+/* ==========================================================================
+   Theme Toggle Button
+   ========================================================================== */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-dark-soft);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  background: rgba(74, 103, 65, 0.1);
+  color: var(--color-primary);
+}
+
+.theme-toggle__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle__icon--sun {
+  display: block;
+}
+
+/* ==========================================================================
+   Dark Theme
+   ========================================================================== */
+
+[data-theme="dark"] {
+  --color-primary: #6B9B5E;
+  --color-primary-light: #7EAD70;
+  --color-primary-dark: #8BBF7D;
+  --color-secondary: #C9A035;
+  --color-secondary-light: #D4AF4A;
+  --color-accent: #D4918A;
+  --color-accent-light: #E0A8A2;
+  --color-cream: #1C1915;
+  --color-cream-dark: #15120F;
+  --color-white: #242019;
+  --color-dark: #E8E0D4;
+  --color-dark-soft: #C8BFB2;
+  --color-dark-muted: #9A8E82;
+  --color-dark-bg: #0E150C;
+  --color-dark-bg-light: #1A2816;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 16px 60px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .site-header {
+  background: rgba(28, 25, 21, 0.85);
+  border-bottom-color: rgba(232, 224, 212, 0.06);
+}
+
+[data-theme="dark"] .site-header.scrolled {
+  background: rgba(28, 25, 21, 0.95);
+}
+
+[data-theme="dark"] .hamburger-line {
+  background: var(--color-dark);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: rgba(107, 155, 94, 0.15);
+}
+
+[data-theme="dark"] .hero-bg-img {
+  opacity: 0.25;
+}
+
+[data-theme="dark"] .hero-overlay {
+  background:
+    linear-gradient(180deg,
+      rgba(28, 25, 21, 0.75) 0%,
+      rgba(28, 25, 21, 0.4) 35%,
+      rgba(28, 25, 21, 0.3) 55%,
+      rgba(28, 25, 21, 0.8) 100%);
+}
+
+[data-theme="dark"] .btn-outline {
+  color: var(--color-dark);
+  border-color: rgba(232, 224, 212, 0.25);
+}
+
+[data-theme="dark"] .btn-outline:hover {
+  background: rgba(232, 224, 212, 0.08);
+  border-color: rgba(232, 224, 212, 0.4);
+  color: var(--color-dark);
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  box-shadow: 0 6px 24px rgba(107, 155, 94, 0.3);
+}
+
+[data-theme="dark"] .service-card {
+  border-color: rgba(232, 224, 212, 0.06);
+}
+
+[data-theme="dark"] .service-icon {
+  background: rgba(107, 155, 94, 0.12);
+}
+
+[data-theme="dark"] .contact-icon {
+  background: rgba(107, 155, 94, 0.12);
+}
+
+[data-theme="dark"] .contact-social a {
+  background: rgba(107, 155, 94, 0.1);
+}
+
+[data-theme="dark"] .nav-links a:not(.nav-cta)::after {
+  background: var(--color-primary);
+}
+
+[data-theme="dark"] .nav-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .footer-links a {
+  color: rgba(232, 224, 212, 0.5);
+}
+
+[data-theme="dark"] .footer-links a:hover {
+  color: var(--color-dark);
+}
+
+[data-theme="dark"] .site-footer {
+  color: rgba(232, 224, 212, 0.7);
+}
+
+[data-theme="dark"] ::selection {
+  background: rgba(107, 155, 94, 0.3);
+  color: var(--color-dark);
+}
+
+@media (max-width: 768px) {
+  [data-theme="dark"] .nav-links {
+    background: var(--color-cream);
+  }
+
+  [data-theme="dark"] .nav-links a {
+    border-bottom-color: rgba(232, 224, 212, 0.06);
+  }
 }

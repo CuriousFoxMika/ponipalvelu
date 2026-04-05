@@ -1,6 +1,37 @@
 (function () {
   'use strict';
 
+  // --- Theme toggle (dark / light) ---
+  const themeToggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+
+  function getPreferredTheme() {
+    var stored = localStorage.getItem('pp-theme');
+    if (stored) return stored;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('pp-theme', theme);
+    themeToggle.setAttribute('aria-label',
+      theme === 'dark' ? 'Vaihda vaalea tila' : 'Vaihda tumma tila'
+    );
+  }
+
+  applyTheme(getPreferredTheme());
+
+  themeToggle.addEventListener('click', function () {
+    var current = root.getAttribute('data-theme');
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+    if (!localStorage.getItem('pp-theme')) {
+      applyTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+
   // --- Scroll reveal with Intersection Observer ---
   const revealElements = document.querySelectorAll('.reveal');
 

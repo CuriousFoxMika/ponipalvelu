@@ -14,12 +14,7 @@
   <meta property="og:url" content="https://ponipalvelu.fi">
   <meta property="og:locale" content="fi_FI">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600;700&family=Courgette&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -27,26 +22,34 @@
   <header class="site-header" id="siteHeader">
     <nav class="nav-container">
       <a href="#hero" class="nav-logo">
-        <span class="logo-icon">
-          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M20 4C16 4 13 7 12 10C10 9 7 9 5 11C3 13 3 16 5 18L8 21C6 24 5 28 7 31C9 34 13 36 17 36H23C27 36 31 34 33 31C35 28 34 24 32 21L35 18C37 16 37 13 35 11C33 9 30 9 28 10C27 7 24 4 20 4Z" fill="currentColor" opacity="0.15"/>
-            <path d="M20 8C17.5 8 15.5 10 14.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M20 8C22.5 8 24.5 10 25.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <circle cx="16" cy="18" r="1.5" fill="currentColor"/>
-            <circle cx="24" cy="18" r="1.5" fill="currentColor"/>
-            <path d="M17 23C18 24.5 22 24.5 23 23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M10 14C8 13 6 14 6 16C6 17.5 7.5 19 9 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M30 14C32 13 34 14 34 16C34 17.5 32.5 19 31 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <span class="logo-text">Ponipalvelu</span>
+        <img src="assets/ponipalvelu_logo_black.png?v=2" alt="Ponipalvelu" class="logo-img logo-light">
+        <img src="assets/ponipalvelu_logo_white.png?v=2" alt="Ponipalvelu" class="logo-img logo-dark">
       </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Avaa valikko" aria-expanded="false">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Vaihda tumma tila" type="button">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Avaa valikko" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#tietoa">Tietoa meistä</a></li>
@@ -61,10 +64,14 @@
 
   <!-- Hero -->
   <section class="hero" id="hero">
+    <img src="assets/IMG_2753.jpg?v=2" alt="" class="hero-bg-img" aria-hidden="true">
     <div class="hero-overlay"></div>
     <div class="hero-content">
+      <h1 class="hero-title reveal">
+        <img src="assets/ponipalvelu_logo_black.png?v=2" alt="Ponipalvelu" class="hero-logo-img logo-light">
+        <img src="assets/ponipalvelu_logo_white.png?v=2" alt="Ponipalvelu" class="hero-logo-img logo-dark">
+      </h1>
       <p class="hero-subtitle reveal">Halilan tila, Vesanka</p>
-      <h1 class="hero-title reveal">Ponipalvelu</h1>
       <p class="hero-tagline reveal">Matalan kynnyksen ratsastusharrastusta<br>pienryhmissä ja paritunneilla</p>
       <div class="hero-actions reveal">
         <a href="https://hopoti.com/stable/Ponipalvelu" target="_blank" rel="noopener" class="btn btn-primary">Varaa tunti</a>
@@ -184,7 +191,9 @@
 
       <div class="services-cta reveal">
         <p>Tuntien varaukset Hopotin kautta</p>
-        <a href="https://hopoti.com/stable/Ponipalvelu" target="_blank" rel="noopener" class="btn btn-primary">Varaa tunti Hopotissa</a>
+        <a href="https://hopoti.com/stable/Ponipalvelu" target="_blank" rel="noopener" class="hopoti-link">
+          <img src="assets/hopoti-logo-blue.png?v=2" alt="Varaa tunti Hopotissa" class="hopoti-logo">
+        </a>
       </div>
     </div>
   </section>
@@ -395,6 +404,8 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
+          <img src="assets/ponipalvelu_logo_black.png?v=2" alt="Ponipalvelu" class="footer-logo-img logo-light">
+          <img src="assets/ponipalvelu_logo_white.png?v=2" alt="Ponipalvelu" class="footer-logo-img logo-dark">
           <span class="footer-logo">Ponipalvelu</span>
           <p>Halilan tila, Vesanka</p>
         </div>
@@ -412,6 +423,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
