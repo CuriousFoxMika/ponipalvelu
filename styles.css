@@ -818,6 +818,28 @@ strong {
 .breed-illustration {
   color: var(--color-primary);
   margin-bottom: var(--spacing-xs);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breed-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  opacity: 1.0;
+  margin: 0 auto;
+}
+
+.breed-icon--small {
+  width: 48px;
+  height: 48px;
+}
+
+[data-theme="dark"] .breed-icon {
+  filter: invert(1);
+  opacity: 0.6;
 }
 
 .breed-card h3 {
@@ -947,7 +969,7 @@ strong {
 }
 
 .footer-logo-img {
-  width: 64px;
+  width: 125px;
   height: 64px;
   object-fit: contain;
   margin: 0 auto var(--spacing-xs);
@@ -1240,9 +1262,9 @@ button:focus-visible {
   --color-cream: #1C1915;
   --color-cream-dark: #15120F;
   --color-white: #242019;
-  --color-dark: #E8E0D4;
-  --color-dark-soft: #C8BFB2;
-  --color-dark-muted: #9A8E82;
+  --color-dark: #EDE7DC;
+  --color-dark-soft: #D8D0C4;
+  --color-dark-muted: #BFB6A8;
   --color-dark-bg: #0E150C;
   --color-dark-bg-light: #1A2816;
 
@@ -1267,6 +1289,24 @@ button:focus-visible {
 
 [data-theme="dark"] .theme-toggle:hover {
   background: rgba(107, 155, 94, 0.15);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--color-dark);
+}
+
+[data-theme="dark"] .section-dark h2,
+[data-theme="dark"] .section-dark h3 {
+  color: var(--color-dark);
+}
+
+[data-theme="dark"] .section-dark .section-label {
+  color: var(--color-accent-light);
 }
 
 [data-theme="dark"] .hero-bg-img {
@@ -1298,7 +1338,16 @@ button:focus-visible {
 }
 
 [data-theme="dark"] .service-card {
-  border-color: rgba(232, 224, 212, 0.06);
+  border-color: rgba(232, 224, 212, 0.08);
+}
+
+[data-theme="dark"] .service-card p,
+[data-theme="dark"] .breed-card p,
+[data-theme="dark"] .stat-label,
+[data-theme="dark"] .services-cta p,
+[data-theme="dark"] .contact-item span,
+[data-theme="dark"] .contact-note {
+  color: var(--color-dark-muted) !important;
 }
 
 [data-theme="dark"] .service-icon {
@@ -1310,7 +1359,26 @@ button:focus-visible {
 }
 
 [data-theme="dark"] .contact-social a {
+  color: var(--color-dark-soft);
   background: rgba(107, 155, 94, 0.1);
+}
+
+[data-theme="dark"] .contact-item strong {
+  color: var(--color-dark);
+}
+
+[data-theme="dark"] .hero-tagline {
+  color: var(--color-dark-soft);
+}
+
+[data-theme="dark"] .facility-card p {
+  opacity: 1;
+  color: var(--color-dark-muted);
+}
+
+[data-theme="dark"] .section-intro {
+  opacity: 1;
+  color: var(--color-dark-soft);
 }
 
 [data-theme="dark"] .nav-links a:not(.nav-cta)::after {
